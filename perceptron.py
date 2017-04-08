@@ -46,7 +46,6 @@ class Perceptron(object):
     Train from a data set. Ends after convergence or after max_iters iterations
     """
     def train(self, dataSet, max_iters=100):
-        dsize = len(dataSet)
         for i in range(max_iters):
             done = True
             for row in dataSet:
